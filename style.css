@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--light);
+
+    display: flex;
+    gap: 7.8rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: 300ms;
+    font-size: 1.6rem;
+}
+
+.dark {
+    transition: 300ms;
+    background: var(--dark);
+}
+
+.container-bar {
+    width: 23.5rem;
+    height: 10.2rem;
+    position: relative;
+
+    border-radius: 5.9rem;
+    background: var(--label);
+}
+
+header h1 {
+    text-align: center;
+    line-height: 5.5rem;
+    font-size: 4.5rem;
+}
+
+.text {
+    color: black;
+}
+
+.img-moon img {
+    position: absolute;
+    top: 1.0rem;
+    left: .8rem;
+    width: 8.4rem;
+    cursor: pointer;
+}
+
+.img-sun img {
+    position: absolute;
+    top: 1.0rem;
+    right: .8rem;
+    width: 8.4rem;
+    cursor: pointer;
+}
+
+.ball {
+    transition: transform 300ms;
+    position: absolute;
+    right: .6rem;
+
+    top: .7rem;
+
+    width: 8.6rem;
+    height: 8.6rem;
+
+    border-radius: 50%;
+    background: var(--light);
+    
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+span {
+    color: cornflowerblue;
+}
+
+footer {
+    font-size: 2.4rem;
+}
